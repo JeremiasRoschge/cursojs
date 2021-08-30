@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <%- include ('./components/header.ejs') -%>
+</head>
+<body>
+<main class="main">
+    <section class="intr"> <!--Introducción-->
+        <article>
+            <h1 class="hintr">Introducción al curso</h1>
+            <p class="pintr"> 
+                En este curso abordaremos el nivel básico de JavaScript. <br> </p>
+
+            <ul class="ulitr">
+                <li>Variables: Como definir de distintas maneras, aplicacion de variables en codigo</li>
+                <li>Explicación de operadores.</li>
+                <li>Condicionales</li>
+                <li>Strings</li>
+                <li>Arrays normales y arrays asociativos</li>
+                <li>Funciones: Sus tres tipos normales, por variables y tipo flecha</li>
+                <li>Clases: Sus usos, estructura y herencia</li>
+            </ul>
+        </article>
+    </section>
+</main>
+
+<div class="divbuttons">
+    <input  class="botoninactivo" type="button" value="Anterior">
+    <a href="/nivelbajo"><input class="boton2" type="button" value="Siguiente"></a>
+</div>
+
+<script src="../index.js"></script>
+</body>
+
+<%- include ('./components/footer.ejs')-%>
+</html>

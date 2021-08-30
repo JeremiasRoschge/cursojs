@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="prism.css">
+    <%- include("components/header.ejs") -%>
+</head>
+<body>
+<main class="main">
+    <section> <!--Introduccion Operadores-->
+        <article> <!--Operadores de asignacion-->
+            <h1 class="var">Introducción a operadores</h1>
+            <h2 class="var">Operadores de asignacion</h2>
+            <p class="var"> Los operadores de asignación devuelven el valor del objeto especificado <br>por el operando izquierdo después de la asignación. <br>El tipo resultante es el tipo del operando izquierdo</p>
+            <table border="1" class="main-container">
+                <caption>Operadores de Asignacion</caption>
+                <tr>
+                    <th scope="col">Operador</th>
+                    <th scope="col">Operacion</th>
+                    <th scope="col">Equivalencia</th>
+                </tr>
+                <tr>
+                    <th scope="row">=</th>
+                    <th scope="row">x=5</th>
+                    <th scope="row">--</th>
+                </tr>
+
+                <tr>
+                    <th scope="row">+=</th>
+                    <th scope="row">x+=5</th>
+                    <th scope="row">x=x+5</th>
+                </tr>
+                <tr>
+                    <th scope="row">-=</th>
+                    <th scope="row">x-=5</th>
+                    <th scope="row">x=x-5</th>
+                </tr>
+                <tr>
+                    <th scope="row">*=</th>
+                    <th scope="row">x*=5</th>
+                    <th scope="row">x=x*5</th>
+                </tr>
+                <tr>
+                    <th scope="row">/=</th>
+                    <th scope="row">x/=5</th>
+                    <th scope="row">x=x/5</th>
+                </tr>
+                <tr>
+                    <th scope="row">%=</th>
+                    <th scope="row">x%=5</th>
+                    <th scope="row">x=x%5</th>
+                </tr>
+    
+            </table>
+        </article>
+
+        <article><!--Operadores de comparacion-->
+            <h2 class="var">Operadores de comparacion</h2>
+            <p class="var">Los operadores de comparacion son aquellos que comparan el<br>
+                 valor de sus operandos y devuelven un valor logico (true o false)</p>
+    
+                 <table border=1 class="main-container">
+                     <tr>
+                         <th scope="col">Operador</th>
+                         <th scope="col">Descripcion</th>
+                        </tr>
+                    <tr>
+                         <th scope="row">Igual(==)</th>
+                         <th scope="row">Devuelve true si los operandos son iguales</th>
+                     </tr>
+
+                     <tr>
+                         <th scope="row">No es igual (!=)</th>
+                         <th scope="row">Devuelve true si los operandos no son iguales</th>
+                     </tr>
+
+                     <tr>
+                         <th scope="row">Iguales (===)</th>
+                         <th scope="row">Devuelve true si los operandos son iguales y del mismo tipo</th>
+
+                     </tr>
+                     <tr>
+                         <th scope="row">Desiguales (!==)</th>
+                         <th scope="row">Devuelve true si los operandos son del mismo tipo pero no iguales, o son de diferente tipo</th>
+                     </tr>
+                     <tr>
+                         <th scope="row">Mayor que (>)</th>
+                         <th scope="row">Devuelve true si el operando izquierdo es mayor que el operando derecho</th>
+                     </tr>
+                     <tr>
+                         <th scope="row">Mayor o igual que (>=)</th>
+                         <th scope="row">Devuelve true si el operando izquierdo es mayor o igual que el operando derecho</th>
+                     </tr>
+                     <tr>
+                         <th scope="row">Menor que(<)</th>
+                        <th scope="row">Devuelve true si el operando izquierdo es menor que el operando derecho</th>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Menor o igual(<=)</th>
+                            <th scope="row">Devuelve true si el operando izquierdo es menor que el operando derecho</th>
+                        </tr>
+                 </table>
+        </article>
+
+        <article> <!--Operadores aritmeticos-->
+
+            <h2 class="var">Operadores aritmeticos</h2>
+            <p class="var">Un operador aritmetico toma valores numericos como sus operando y devuelve <br>
+            un solo valor numerico (resultado)</p>
+
+            <table border="1" class="main-container">
+                <tr>
+                    <th scope="col">Operador</th>
+                    <th scope="col">Descripcion</th>
+                </tr>
+
+                <tr>
+                    <th scope="row">Resto (%)</th>
+                    <th scope="row">Devuelve el resto entero de dividir los dos operandos</th>
+                </tr>
+
+                <tr>
+                    <th scope="row">Incremento (++)</th>
+                    <th scope="row">Suma uno a su operando</th>
+                </tr>
+
+                <tr>
+                    <th scope="row">Decremento (--)</th>
+                    <th scope="row">Resta uno a su operando</th>
+                </tr>
+                <tr>
+                    <th scope="row">Resta (-)</th>
+                    <th scope="row">Devuelve la resta de los operando</th>
+                </tr> 
+                <tr>
+                    <th scope="row">Suma(+)</th>
+                    <th scope="row">Devuelve la suma de los operando</th>
+                </tr>
+            </table>
+
+        </article>
+
+        <article> <!--Operadores logicos uwu-->
+            <h2 class="var">Operadores logicos</h2>
+            <p class="var">Estos operadores devuelven true y false pero en el caso de <br>
+            && y || devuelven el valor de uno de los operandos</p>
+            <table border="1" class="main-container">
+                <tr>
+                    <th scope="col">Operador</th>
+                    <th scope="col">Descripcion</th>
+                </tr>
+
+                <tr>
+                    <th scope="row">AND (&&)</th>
+                    <th scope="row">Cuando se usa con valores booleanos, el operador AND devuelve true si ambas expresiones son verdaderas y devuelve false en caso contrario.</th>
+                </tr>
+
+                <th scope="row">OR (||)</th>
+                <th scope="row">Devuelve el valor de uno de los operando si es true, sino devuelve el otro operando como false.
+                    En el caso que alguno de los operando sean true, devuelve true. Pero si uno es false devuelve false
+                </th>
+
+                <tr>
+                    <th scope="row">NOT (!)</th>
+                    <th scope="row">Devuelve false si su operando se puede convertir a true, sino devuelve true</th>
+                </tr>
+            </table>
+
+        </article>
+    </section>
+</main>
+</body>
+
+<%- include("components/footer.ejs") -%>
+</html>

@@ -1,0 +1,254 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 3rem;
+    background-color: rgb(32,32,44);
+    color: white;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 2rem;
+    line-height: 1em;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+h1.hintr {
+    font-size: 30px;
+    padding-left: 15rem;
+}
+
+h1.var {
+    font-size: 30px;
+    line-height: 1rem;
+    padding-left: 15rem;
+}
+
+h2.var {
+    font-size: 22px;
+    line-height: 1rem;
+    padding-left: 16rem;
+}
+
+h3.var {
+    padding-left: 16rem;
+}
+
+p.var {
+    padding-left: 20rem;
+    line-height: 20px;
+}
+
+.pc {
+    padding-left: 16rem;
+    line-height: 20px;
+}
+
+p.pintr {
+    padding-left: 18rem;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+
+table {
+
+    border-collapse: collapse;
+    background-color: #a0a0a0;
+    border: 3px solid #486eb5;
+  }
+  
+ .main-container {
+     margin: 5px auto;
+     width: 600px;
+ }
+
+
+
+.logo {
+    height: 40px; 
+    padding-right: 40%;
+
+}
+
+.ulitr  {
+    padding-left: 18rem;
+    font-size: 17px;
+    line-height: 25px;
+}
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #333;
+    font-size: 17px;
+    padding: 0.2rem 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+}
+
+.botoninactivo {
+    font-size: 18px;
+    margin-left: 20%;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    width: 120px;
+    border: 1px solid #486eb5;
+    cursor: not-allowed;
+}
+
+.botoninactivo:hover {
+    background-color: #486eb5; 
+    opacity: 0.6;
+    color: white;
+}
+
+.siguiente-tema {
+    padding-left: 28rem;
+    font-size: 20px;
+}
+
+
+.boton1 {
+    font-size: 18px;
+    margin-left: 20%;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    width: 120px;
+    border: 1px solid #486eb5;
+}
+
+.boton1:hover {
+    background-color: #486eb5; 
+    color: white;
+}
+
+.boton2 {
+    font-size: 18px;
+    margin-left: 30%;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    width: 120px;
+    border: 1px solid #486eb5;
+}
+
+.boton2:hover {
+    background-color: #486eb5; 
+    color: white;
+}
+
+.error404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error404 h1 {
+    font-size: 50px !important;
+    margin: 0px 0px 30px 0px;
+}
+
+.error404 h2 {
+    font-size: 200px;
+}
+
+.error404 button {
+    border: 0;
+    background-color: #486eb5;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.error404 button:hover {
+    background-color: #4e76c0;
+}
+
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+    background-color: #486eb5;
+}
+
+.main {
+    padding-top: 3rem;
+}
+
+.footer {
+    background-color: #358ccb;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+body.darkmode {
+    background-color:rgb(32,32,44);
+    color:white;
+}
+
+@media only screen and (max-widht: 70px) {
+
+   .navigation {
+       width: 100%;
+       margin-top: 1rem;
+   } 
+
+    .navigation ul li {
+        display: block;
+    }
+    
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 0rem;
+        transition: all 0.4s linear;
+    }
+    
+    .navigation ul li a:hover{
+        background-color: #4a4a4a;
+    }
+}

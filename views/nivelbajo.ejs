@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Junior JS</title>
+    <link rel="stylesheet" href="prism.css">
+
+<%- include("./components/header.ejs") -%>
+</head>
+<body>
+    <main class="main">
+    <section> <!--Intr. a variables-->
+        <article>
+        <h1 class="var">Introducción a variables</h1>
+        <h2 class="var"> ¿Qué son y para qué sirven?</h2>
+        <p class="var">
+            Una variable es un espacio declarado en una computadora que permite <br>
+            almacenar ciertos tipos de datos (Boleanos, Float, Numeros, Strings)
+        </p>
+    </article>
+
+    <article> <!--Constante-->
+        <p class="pc"><strong>Para definir una variable utilizamos:</strong></p>
+        <pre class="language-javascript">
+            <code class="language-javascript">
+                /*Utilizamos esto para definir una constante
+                la cual no cambia su valor */
+                const variable = 2
+            </code>
+        </pre>
+    </article>
+
+    <article> <!--Let y Var-->
+    <p class="pc">Let y var son dos tipos de variables no constantes, es decir, se pueden cambiar. <br>
+                  Let tiene un alcance (scope) limitado. No funciona fuera del bloque de su declaracion <br>          
+    </p>
+        <pre class="language-javascript">
+            <code class="language-javascript">
+     //Var
+    var variable = 2
+    //Otra forma de definir es
+    variable = 2
+    /*Posee un scope global el cual le permite acceder a mas 
+    alla de su bloque*/
+
+    //Let
+    let variable1 = 2
+    /*Una de las formas de modificar el valor de esta variable 
+     por fuera es con:*/
+     variable1 = 3
+      /*Si vieron el ejemplo pasado de var, estamos utilizando
+    el segundo metodo para modificar con su scope global un 
+    let*/
+                
+            </code>
+        </pre>
+    </article>
+    </section>
+
+<article> <!--Botones-->
+    
+    <p class="siguiente-tema"><strong>Siguiente tema: Operadores</strong></p>
+
+    <div class="divbuttons">
+        <a href="/"><input  class="boton1" type="button" value="Anterior"></a>
+        <a href="/operadores"><input class="boton2" type="button" value="Siguiente"></a>
+    </div>
+
+</article>
+
+
+    </main>
+    <script src="prism.js"></script>
+</body>
+<%- include ("./components/footer.ejs") -%>
+</html>
