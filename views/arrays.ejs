@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+</head>
+<%- include("./components/header.ejs") -%>
+<main class="main">
+<body>
+<section> <!--Arrays-->
+    <article></article>
+    <h1 class="var">Arrays (arreglos)</h1>
+    <h2 class="var">¿Qué son y para qué sirven?</h2>
+    <p class="var">Un array visto desde una analogia basica es un contenedor con diversos tipos de elementos <br>
+    dentro de el, al momento de tener uno, tenes un array. <br>
+Caracteristicas que se le pueden dar a un array: Nombre, cantidad, cantidad de elementos y diversidad del mismo. <br>
+En los arrays se arranca desde la posicion [0]</p>
+
+</article>
+
+<pre class="language-javascript">
+    <code class="language-javascript">
+    let marcadeautos = ["bmw", "fiat", "chevrolet"] /*Se utilizan los [] 
+    para agrupar los datos.*/
+    document.write(marcadeautos) /*Al imprimir el array (marcadeautos) 
+    devolveria todos los datos que pusimos dentro de el.*/
+    </code>
+</pre>
+
+</section>
+</main>
+<script src="prism.js"></script>
+</body>
+
+
+<%- include("./components/footer.ejs") -%>
+
+</html>

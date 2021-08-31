@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <title>Document</title>
+</head>
+
+<%- include("./components/header.ejs") -%>
+
+<body>
+   <main class="main">
+<section> <!--Introduccion a condicionales-->
+    <article>
+    <h1 class="var">Condicionales</h1>
+    <h2 class="var">Definicion</h2>
+    <p class="var">Un condicional es una sentencia que nos permite validar/ejecutar un bloque <br>
+    solamente si una condicion se cumple</p>
+
+    <p class="var">En JavaScript tenemos 3 tipos de condicionales</p>
+    <ul class="tipos">
+    <strong>
+        <li>If</li>
+        <li>Else</li>
+        <li>Else if</li>
+    </strong>
+    </ul>
+</article>
+
+<article>
+
+    <h3 class="var">Comenzemos hablando de If</h3>
+    <pre class="language-javascript">
+<code class="language-javascript">
+//Si Condicional es igual a true ejecuta el bloque
+    if(Condicion) {
+alert("Hola")
+    }
+</code>
+    </pre>
+
+    <pre class="language-javascript">
+        <code class="language-javascript">
+     //Si Condicional es igual a false NO se ejecuta el bloque
+    if(Condicional) {
+    
+       }  
+
+        </code>
+    </pre>
+<p class="var">Pongamos un ejemplo mas claro</p>
+    <pre class="language-javscript">
+        <code class="language-javascript">
+            if(3>1) { //Se ejecuta
+                alert("hola");
+            }
+
+            if(1>3) { //No se ejecuta
+                alert("hola");
+            }
+        </code>
+    </pre>
+    <h3 class="var">Else y else if funcionan de una manera similar</h3>
+    <p class="var">Else se utiliza para ejecutar un bloque que realize la operacion contraria a nuestro if<br>
+    Por ejemplo si tenemos un if que diga que 3 es mayor que 1 e imprima un mensaje en pantalla <br>
+else serviria para realizar la operacion de si 3 NO ES mayor que 1.</p>
+
+       <pre class="language-javascript">
+           <code class="language-javascript">
+               if(3>1) { //Si es mayor que 1
+                   alert("3 es mayor que 1"); //Ejecutar 
+               } else { //Si no es mayor
+                   alert("3 no es mayor que 1"); //Ejecutar
+               }
+           </code>
+       </pre> 
+
+       <p class="var">Else if lo utilizamos de una manera parecida pero nada mas que agregando la condicion</p>
+       <pre class="language-javascript">
+        <code class="language-javascript">
+
+            if(3>1) { //Condicion
+                alert("3 es mayor que 1"); //Ejecutar
+            } else if(3=>3) { //Ponemos otra condicion por si la de arriba no se cumplio
+                alert("hola"); //Ejecutar
+            }
+
+        </code>
+       </pre>
+</article>
+</section>
+   </main>
+   <script src="prism.js"></script>
+
+   <div class="divbuttons">      
+    <a href="/operadores"><input  class="boton1" type="button" value="Anterior"></a>
+    <a href="/arrays"><input class="boton2" type="button" value="Siguiente"></a>
+</div>
+</body>
+
+<%- include("./components/footer.ejs") -%>
+
+</html>
