@@ -17,10 +17,12 @@ app.use(express.static(__dirname + "/views"));
 //
  //Rutas
 app.use("/", require("./router/index.js"))
-app.use("/nivelbajo", require("./router/nivelbajo.js"))
-app.use("/nivelmedio", require("./router/nivelmedio.js"))
+app.use("/variables", require("./router/variables.js"))
 app.use("/about", require("./router/about.js"))
 app.use("/operadores", require("./router/operadores.js"))
+app.use("/condicionales", require("./router/condicionales.js"))
+app.use("/arrays", require("./router/arrays.js"))
+app.use("/nivelmedio", require("./router/nivelmedio.js"))
 app.get("*", function(req, res) {
     res.status(404).render("404.ejs")
     })
