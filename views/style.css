@@ -2,15 +2,27 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 3rem;
-    background-color: rgb(32,32,44);
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     margin: 0;
 }
 
+.tipos {
+    padding-left: 20rem;
+    line-height: 1;
+}
 
 h1 {
     font-size: 2rem;
     line-height: 1em;
+}
+.imgbuton {
+    background-color: #333;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    margin: 0;
 }
 
 p {
@@ -67,13 +79,20 @@ table {
      width: 600px;
  }
 
-
-
-.logo {
-    height: 40px; 
-    padding-right: 40%;
+ .logo {
+    top: -1rem;
 
 }
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
 
 .ulitr  {
     padding-left: 18rem;
@@ -94,6 +113,10 @@ table {
     top: 0;
     width: 100%;
 
+}
+
+.menu-icon {
+    display: none;
 }
 
 .botoninactivo {
@@ -186,17 +209,10 @@ table {
     text-decoration: none;
 }
 
-.logo-nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 
 .navigation ul {
     margin: 0;
-    padding: 0;
+    padding-left: 14.5rem;
     list-style: none;
 }
 
@@ -226,29 +242,54 @@ table {
     margin-top: 6rem;
 }
 
+
+@media only screen and (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 0.5rem;
+        right: 2rem;
+        margin: 0;
+
+    }
+    .logo {
+        display: block;
+        top: 0.5rem;
+    }
+
+    .navigation {
+        width: 100%;
+        margin-top: 1rem;
+    } 
+
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation ul.show{
+        display: block;
+        padding: 0;
+        
+    }
+ 
+     .navigation ul li {    
+        display: block;
+     }
+     
+     .navigation ul li a {
+         display: block;
+         padding: 0.5rem 0rem;
+         transition: all 0.4s linear;
+     }
+     
+     .navigation ul li a:hover{
+         background-color: #4a4a4a;
+     }
+ }
+
 body.darkmode {
-    background-color:rgb(32,32,44);
-    color:white;
-}
-
-@media only screen and (max-widht: 70px) {
-
-   .navigation {
-       width: 100%;
-       margin-top: 1rem;
-   } 
-
-    .navigation ul li {
-        display: block;
-    }
-    
-    .navigation ul li a {
-        display: block;
-        padding: 0.5rem 0rem;
-        transition: all 0.4s linear;
-    }
-    
-    .navigation ul li a:hover{
-        background-color: #4a4a4a;
-    }
+    background-color: rgb(32,32,44);
+    color: white;
 }

@@ -1,7 +1,8 @@
-const bdark = document.querySelector("#bdark");
-const body = document.querySelector("body");
 
-bdark.addEventListener("darkmode", (e) =>{
-    body.classList.toggle("darkmode");
+const showmode = document.querySelector("#menu");
+const ul = document.querySelector("body");
+
+showmode.addEventListener("click", e => {
+    ul.classList.toggle("show");
+
 });
-
